@@ -1,0 +1,12 @@
+%p#notice=notice 
+%p
+  %b Description:<
+  = @image.description
+
+%p
+  %b Photo: 
+  = image_tag(@image.photo, :width => 175)
+
+
+= link_to 'Edit', edit_image_path(@image) |
+= link_to 'Back', images_path
